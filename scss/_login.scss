@@ -1,0 +1,38 @@
+.card {
+  width: 400px;
+  height: 370px;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border: none;
+  border-radius: 10px;
+}
+
+input {
+  &:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+  }
+}
+
+.input-group-prepend span {
+  background-color: $medium-color;
+  color: $cold-color;
+  border: none;
+  border-radius: 10px;
+}
+
+.login-logo {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: $white-color;
+  top: -60px;
+  right: -30px;
+  border: 3px solid $white-color;
+  border-radius: 50%;
+  background: url('../img/company-icon.png') center center/cover;
+}
+
+.login-btn {
+  background: $cold-color;
+  border: none;
+}

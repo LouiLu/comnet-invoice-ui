@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>My Invoice | Invoice Sys</title>
+  </head>
+  <body>
+    <div id="sidebar-wrapper" class="wrapper h-100">
+      <nav id="sidebar" class="b-shadow-2">
+        <div class="sidebar-header">
+          <div class="nav-logo mx-auto my-3"></div>
+          <h3>ComNet Invoice</h3>
+          <strong>CI</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="">
+            <a href="dashboard.html" class="mobile-icon"
+              ><i class="fas fa-home"></i
+            ></a>
+            <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+          </li>
+          <li>
+            <a href="about.html" class="mobile-icon"
+              ><i class="fas fa-info"></i
+            ></a>
+            <a href="about.html"><i class="fas fa-info"></i> About</a>
+          </li>
+          <li class="active">
+            <a href="#" class="mobile-icon"
+              ><i class="fas fa-file-invoice-dollar"></i
+            ></a>
+            <a
+              href="#pageSubmenu"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              ><i class="fas fa-file-invoice-dollar"></i> Invoices</a
+            >
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="addInvoicePreStep.html">Add Invoice</a>
+              </li>
+              <li>
+                <a href="myInvoice.html" class="">My Invoices</a>
+              </li>
+              <li>
+                <a href="#">Invoice 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div id="sidebarCollapse" class="text-center"></div>
+      </nav>
+      <!-- Page Content  -->
+      <section id="content">
+        <div class="container-fluid">
+          <div class="row mt-3 p-3">
+            <div class="col-lg-6"><h3 class="text-white">My Invoices</h3></div>
+            <div class="col-lg-6">
+              <div class="row mx-auto">
+                <a href="existCustomer.html" class="btn btn-success mr-auto">
+                  Exist Customers
+                </a>
+                <a href="existInvoice.html" class="btn btn-success mr-auto">
+                  Exist Invoices
+                </a>
+                <a
+                  href="addInvoicePreStep.html"
+                  class="btn btn-success mr-auto"
+                >
+                  <i class="fas fa-plus"></i> New Invoice
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <h3 class="lead text-white p-2 mb-0 bg-dark border-bottom">
+              Overview
+            </h3>
+            <table id="invoices" class="table bg-white mt-0 p-0 b-shadow-2">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Project</th>
+                  <th>Owner</th>
+                  <th>Processing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="approveInvoice.html"
+                      ><i class="fas fa-pen"></i> Alfreds Futterkiste</a
+                    >
+                  </td>
+                  <td>Maria Anders</td>
+                  <td>
+                    <a
+                      href="aproveInvoice.html"
+                      class="table-status bg-success text-white"
+                      ><small>ARE</small></a
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <a href="approveInvoice.html"
+                      ><i class="fas fa-pen"></i> Alfreds Futterkiste</a
+                    >
+                  </td>
+                  <td>Francisco Chang</td>
+                  <td>
+                    <a
+                      href="aproveInvoice.html"
+                      class="table-status bg-success text-white"
+                      ><small>ARE</small></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="approveInvoice.html"
+                      ><i class="fas fa-pen"></i> Alfreds Futterkiste</a
+                    >
+                  </td>
+                  <td>Roland Mendel</td>
+                  <td>
+                    <a
+                      href="aproveInvoice.html"
+                      class="table-status bg-success text-white"
+                      ><small>ARE</small></a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+          $('#sidebar,#sidebarCollapse').toggleClass('sb-active');
+        });
+      });
+    </script>
+  </body>
+</html>

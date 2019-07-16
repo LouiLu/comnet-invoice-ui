@@ -1,0 +1,21 @@
+@import 'config';
+@import 'login';
+@import 'navbar';
+@import 'invoice';
+
+html,
+body {
+  background: $medium-color;
+  height: 100%;
+}
+
+.container {
+  height: 100vh;
+  align-content: center;
+}
+
+a {
+  &:hover {
+    color: $primary-color;
+  }
+}
